@@ -4,6 +4,9 @@
   "description": "Song Tag using Setlist.fm API",
   "main": "index.js",
   "repository": "https://github.com/clintmilner/ga.song-tag.git",
-  "author": "Clint Milner <cmilner@datto.com>",
-  "license": "MIT"
+  "author": "Clint Milner",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
 }

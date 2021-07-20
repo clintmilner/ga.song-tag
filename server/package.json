@@ -1,0 +1,22 @@
+{
+  "name": "song-tag-server",
+  "version": "1.0.0",
+  "description": "Server code for the SongTag site",
+  "repository": "https://github.com/clintmilner/ga.song-tag.git",
+  "author": "Clint Milner",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^3.0.1",
+    "apollo-server": "^3.0.1",
+    "graphql": "^15.5.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
