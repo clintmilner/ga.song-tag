@@ -50,6 +50,7 @@ code {
 #root {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    /*min-height: 100%;*/
+    min-height: 100vh;
     background: url("https://milner.io/static/code_and_music_bg.72d4ff40.svg");
 }
