@@ -1,9 +1,10 @@
 const resolvers = {
   Query: {
-    artist: (parent, args, context, info) => {
-      const { mbid } = args
-      const { dataSources } = context
+    artist: (parent, { mbid }, { dataSources }, info) => {
       return dataSources?.setlistAPI?.getArtist(mbid)
+    },
+    setlists: (parent, { mbid }, { dataSources }, info) => {
+      return dataSources?.setlistAPI?.getSetlists(mbid)
     },
   },
 }

@@ -10,6 +10,7 @@ const Header = () => (
     <InfoContainer>
       <Link to="/artist/bf600e2b-dc2d-4839-a1be-6ebef4087cd0">311</Link>
       <Link to="/artist/8bfac288-ccc5-448d-9573-c33ea2aa5c30">RHCP</Link>
+      <Link to="/artist/07e748f1-075e-428d-85dc-ce3be434e906">DMB</Link>
     </InfoContainer>
   </HeaderBar>
 )
