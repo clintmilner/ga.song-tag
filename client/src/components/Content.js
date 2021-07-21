@@ -14,5 +14,5 @@ const ContentDiv = styled.div`
   max-width: ${widths.textPageWidth};
   width: 100%;
   align-self: center;
-  background: gold;
+  border: 1px solid gold;
 `

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { Router } from '@reach/router'
 /** importing our pages here */
 import Home from './pages/Home'
-import Band from './pages/Band'
+import Artist from './pages/Artist'
 import styled from 'styled-components'
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
     <StyledApp>
       <Router primary={false} component={Fragment}>
         <Home path="/" />
-        <Band path="/band/:bandId" />
+        <Artist path="/artist/:mbid" />
       </Router>
     </StyledApp>
   )

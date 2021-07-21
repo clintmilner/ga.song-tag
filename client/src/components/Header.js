@@ -8,8 +8,8 @@ const Header = () => (
       <Logo>{logo}</Logo>
     </Link>
     <InfoContainer>
-      <Link to="/band/311">bar chart race</Link>
-      <Link to="/about">about</Link>
+      <Link to="/artist/bf600e2b-dc2d-4839-a1be-6ebef4087cd0">311</Link>
+      <Link to="/artist/8bfac288-ccc5-448d-9573-c33ea2aa5c30">RHCP</Link>
     </InfoContainer>
   </HeaderBar>
 )
