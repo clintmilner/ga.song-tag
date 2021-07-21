@@ -7,6 +7,9 @@ const typeDefs = gql`
 
     "Get Show and Setlist details for this Artist"
     setlists(mbid: ID!): SetlistPage
+
+    "Search by Artist name"
+    artistLookup(search: String!): ArtistPage
   }
 
   type QueryByIDArgs {
@@ -44,6 +47,13 @@ const typeDefs = gql`
   type Song {
     name: String
     info: String
+  }
+
+  type ArtistPage {
+    total: Int
+    page: Int
+    itemsPerPage: Int
+    artist: [Artist]
   }
 
   type SetlistPage {

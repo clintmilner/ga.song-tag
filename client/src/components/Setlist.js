@@ -40,7 +40,6 @@ export const Setlist = ({ mbid }) => {
   })
 
   const renderContent = () => {
-    console.info(data?.setlists)
     return data?.setlists?.setlist?.map(data => (
       <div
         key={data?.id}
@@ -86,9 +85,6 @@ export const Setlist = ({ mbid }) => {
               </>
             )
           })}
-          {/*<span>{data?.artist?.name}</span>*/}
-          {/*<small>{data?.tour?.name}</small>*/}
-          {/*<small>{data?.sets?.set?.song?.length}</small>*/}
         </div>
       </div>
     ))

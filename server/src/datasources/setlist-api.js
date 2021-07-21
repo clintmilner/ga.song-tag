@@ -24,10 +24,20 @@ class SetlistAPI extends RESTDataSource {
   getSetlists(mbid) {
     return this.get(
       `artist/${mbid}/setlists`,
-      { p: 5 },
+      { p: 1 },
       {
         headers,
       },
+    )
+  }
+
+  getArtistByName(search) {
+    return this.get(
+      `search/artists`,
+      {
+        artistName: search,
+      },
+      { headers },
     )
   }
 }
