@@ -10,6 +10,9 @@ const typeDefs = gql`
 
     "Search by Artist name"
     artistLookup(search: String!): ArtistPage
+
+    "Lookup most recent Artist searched"
+    recentSearches: [Artist]
   }
 
   type QueryByIDArgs {
@@ -18,7 +21,7 @@ const typeDefs = gql`
 
   type Artist {
     mbid: ID!
-    name: String!
+    name: String
   }
 
   type Setlist {

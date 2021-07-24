@@ -9,13 +9,20 @@ const headers = {
   'Access-Control-Allow-Headers':
     'Origin, X-Requested-With, Content-Type, Accept',
 }
+let recentSearches = []
 class SetlistAPI extends RESTDataSource {
   constructor() {
     super()
     this.baseURL = `https://api.setlist.fm/rest/1.0/`
   }
 
+  getRecentSearches() {
+    console.info('🍣', recentSearches)
+    return recentSearches
+  }
+
   getArtist(mbid) {
+    recentSearches.push({ mbid, name: 'no name' })
     return this.get(`artist/${mbid}`, undefined, {
       headers,
     })

@@ -4,6 +4,7 @@ import ContentSection from '../components/Content'
 import { gql, useQuery } from '@apollo/client'
 import QueryResult from '../components/QueryResult'
 import Setlist from '../components/Setlist'
+import RecentSearches from '../components/RecentSearches'
 
 const GET_ARTIST = gql`
   query getArtist($mbid: ID!) {
@@ -23,6 +24,7 @@ const Artist = ({ mbid }) => {
       <QueryResult data={data} loading={loading} error={error}>
         <ContentSection>
           <H1>{data?.artist?.name}</H1>
+          <RecentSearches />
           <Setlist mbid={mbid} />
         </ContentSection>
       </QueryResult>

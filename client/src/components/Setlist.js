@@ -34,7 +34,6 @@ const GET_SETLISTS = gql`
 `
 
 export const Setlist = ({ mbid }) => {
-  console.info('mbid', mbid)
   const { data, loading, error } = useQuery(GET_SETLISTS, {
     variables: { mbid },
   })
@@ -58,7 +57,7 @@ export const Setlist = ({ mbid }) => {
 
         <div
           style={{
-            flex: 5,
+            flex: 3,
           }}
         >
           {Object.keys(data?.sets?.set).map((theKey, idx) => {

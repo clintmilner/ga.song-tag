@@ -9,6 +9,9 @@ const resolvers = {
     artistLookup: (parent, { search }, { dataSources }, info) => {
       return dataSources?.setlistAPI?.getArtistByName(search)
     },
+    recentSearches: (parent, { search }, { dataSources }, info) => {
+      return dataSources?.setlistAPI?.getRecentSearches()
+    },
   },
 }
 
