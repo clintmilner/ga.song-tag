@@ -17,7 +17,7 @@ class SetlistAPI extends RESTDataSource {
   }
 
   getRecentSearches() {
-    console.info('🍣', recentSearches)
+    // console.info('🍣', recentSearches)
     return recentSearches
   }
 
@@ -28,10 +28,10 @@ class SetlistAPI extends RESTDataSource {
     })
   }
 
-  getSetlists(mbid) {
+  getSetlists(mbid, p) {
     return this.get(
       `artist/${mbid}/setlists`,
-      { p: 1 },
+      { p },
       {
         headers,
       },
